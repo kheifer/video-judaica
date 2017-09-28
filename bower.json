@@ -1,0 +1,20 @@
+{
+  "name": "video-judaica",
+  "description": "New website for special library",
+  "main": "",
+  "authors": [
+    "Esti Shay, Ryan Nunez, Maria Thomas, Paul Guevarra, Kheifer Fuller"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
