@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent} from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import {TitleListComponent} from './title-list/title-list.component';
+import {FooterComponent} from './footer/footer.component';
 
 const APP_ROUTES: Routes = [
   {
