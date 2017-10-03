@@ -16,13 +16,13 @@ const APP_ROUTES: Routes = [
     component: AboutComponent
   },
   {
-    path:'title-list',
+    path: 'title-list',
     component: TitleListComponent
   },
   {
-    path:'membership',
+    path: 'membership',
     component: MembershipComponent
   }
-]
+];
 
 export const ROUTING: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES);

@@ -10,7 +10,7 @@ import { MembershipService } from '../membership.service';
 export class MembershipComponent implements OnInit {
     @Input() selectedMembership;
 
-  constructor(private membershipService: MembershipService)) { }
+  constructor(private membershipService: MembershipService) { }
 
   ngOnInit() {
   }
