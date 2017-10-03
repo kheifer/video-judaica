@@ -7,6 +7,8 @@ import { AboutComponent } from './about/about.component';
 import { ROUTING } from './app.routing';
 import { TitleListComponent } from './title-list/title-list.component';
 import { FooterComponent } from './footer/footer.component';
+import { MembershipComponent } from './membership/membership.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { FooterComponent } from './footer/footer.component';
     WelcomeComponent,
     AboutComponent,
     TitleListComponent,
-    FooterComponent
+    FooterComponent,
+    MembershipComponent,
+    
   ],
   imports: [
     BrowserModule, ROUTING
