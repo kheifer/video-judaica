@@ -3,7 +3,7 @@ import { Movie } from './movie.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
-export class MoviesService {
+export class MovieService {
   movies: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
