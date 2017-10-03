@@ -12,4 +12,16 @@ export class MovieService {
   getProducts(){
     return this.movies;
   }
+
+  addMovie(newMovie: Movie){
+    this.movies.push(newMovie);
+  }
+
+  getMovieById(movieId: string){
+    return this.database.object('movies/' + movieId);
+  }
+
+  // updateMovie(localUpdatedMovie){
+  //   var projectEntryinFirebase = this.getMovieById
+  // }
 }

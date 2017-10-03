@@ -10,6 +10,8 @@ import { AboutComponent } from './about/about.component';
 import { ROUTING } from './app.routing';
 import { TitleListComponent } from './title-list/title-list.component';
 import { FooterComponent } from './footer/footer.component';
+import { AdminComponent } from './admin/admin.component';
+import { EditMovieComponent } from './edit-movie/edit-movie.component';
 
 
 export const firebaseConfig = {
@@ -26,7 +28,9 @@ export const firebaseConfig = {
     WelcomeComponent,
     AboutComponent,
     TitleListComponent,
-    FooterComponent
+    FooterComponent,
+    AdminComponent,
+    EditMovieComponent
   ],
   imports: [
     BrowserModule, ROUTING, AngularFireModule.initializeApp(firebaseConfig), AngularFireDatabaseModule
