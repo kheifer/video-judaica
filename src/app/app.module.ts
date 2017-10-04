@@ -14,6 +14,8 @@ import { AboutComponent } from './about/about.component';
 import { ROUTING } from './app.routing';
 import { TitleListComponent } from './title-list/title-list.component';
 import { FooterComponent } from './footer/footer.component';
+import { TitleSearchComponent } from './title-search/title-search.component';
+import { SearchPipe } from './search.pipe';
 
 
 export const firebaseConfig = {
@@ -30,7 +32,9 @@ export const firebaseConfig = {
     WelcomeComponent,
     AboutComponent,
     TitleListComponent,
-    FooterComponent
+    FooterComponent,
+    TitleSearchComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,

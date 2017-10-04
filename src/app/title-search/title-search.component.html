@@ -1,0 +1,18 @@
+<h1>Movie Search</h1>
+<input type="text" (keydown)="search($event)" placeholder="search movies" class="input">
+
+<input class="form-control" type="text" [value]="filterText"
+  [placeholder]="filterPlaceholder" [formControl]="filterInput" />
+
+<div *ngFor="let movie of movies | filter:{title: filterText} : false">
+  <h4>{{movie?.title}}</h4>
+  <p>
+    {{movie?.genre}}
+  </p>
+</div>
+<div *ngIf="movies?.length < 1">
+  <hr>
+  <p>
+    No results found
+  </p>
+</div>

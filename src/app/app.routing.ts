@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent} from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import {TitleListComponent} from './title-list/title-list.component';
-import {FooterComponent} from './footer/footer.component';
+import {TitleSearchComponent} from './title-search/title-search.component';
 
 const APP_ROUTES: Routes = [
   {
@@ -17,6 +17,10 @@ const APP_ROUTES: Routes = [
   {
     path:'title-list',
     component: TitleListComponent
+  },
+  {
+    path:'title-list',
+    component: TitleSearchComponent
   }
 ]
 
