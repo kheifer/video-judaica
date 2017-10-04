@@ -1,3 +1,5 @@
-<p>
-  title-list works!
-</p>
+<div *ngFor="let movie of movies | async"  class="panel panel-default">
+  <div class="panel-body">
+      <h3><em>{{movie.title}}</em> by {{movie.runtime}}</h3>
+  </div>
+</div>

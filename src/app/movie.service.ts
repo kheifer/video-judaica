@@ -9,7 +9,7 @@ export class MovieService {
   constructor(private database: AngularFireDatabase) {
     this.movies = database.list('movies');
   }
-  getProducts(){
+  getMovies(){
     return this.movies;
   }
 }
