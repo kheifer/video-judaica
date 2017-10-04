@@ -7,7 +7,7 @@ export class MovieService {
   movies: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
-    this.movies = database.list('movies');
+    this.movies = database.list('video-judaica');
   }
   getMovies(){
     return this.movies;
