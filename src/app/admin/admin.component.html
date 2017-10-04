@@ -4,8 +4,8 @@
   <a href="#">Memberships</a>
   <a href="#">Checked Out</a>
   <a href="#">Checked In</a>
-  <a href="#">Add New Item</a>
-  <a href="#">See/Edit Titles</a>
+  <a href="#" class="active">Add New Item</a>
+  <a href="#">View/Edit Titles</a>
 </div>
 
 <div id="add-movie-form" class="panel panel-default">
@@ -14,36 +14,36 @@
   </div>
   <div class="panel-body">
     <label>Title:</label>
-    <br>
     <input #newTitle>
+    <br>
     <label>Runtime:</label>
-    <br>
     <input #newRuntime>
+    <br>
     <label>Rating:</label>
-    <br>
     <input #newRating>
+    <br>
     <label>Language(s):</label>
-    <br>
     <input #newLanguage>
+    <br>
     <label>Genre:</label>
-    <br>
     <input #newGenre>
+    <br>
     <label>Format:</label>
-    <br>
     <input #newFormat>
+    <br>
     <label>Availability:</label>
-    <br>
     <input #newAvailability>
+    <br>
     <label>Deposit:</label>
-    <br>
     <input #newDeposit>
+    <br>
     <label>imdb Link:</label>
-    <br>
     <input #newImdb>
-    <label>Rental restriction(s):</label>
     <br>
+    <label>Rental restriction(s):</label>
     <input #newRestriction>
-    <button (click)="submitForm(newTitle.value,
+    <br><br><br><br>
+    <button class="btn btn-primary" (click)="newItemForm(newTitle.value,
                                 newRuntime.value,
                                 newRating.value,
                                 newLanguage.value,
@@ -54,6 +54,16 @@
                                 newImdb.value,
                                 newRestriction.value); newTitle.value = '';   newRuntime.value = ''; newRating.value = '';  newLanguage.value = ''; newGenre.value = ''; newFormat.value = ''; newAvailability.value = ''; newDeposit.value = ''; newImdb.value = ''; newRestriction.value = ''">Add</button>
   </div>
+</div>
+
+<div id="view-all-admin" class="panel panel-default">
+  <div class="panel-heading">
+    <h3>View All Titles</h3>
+  </div>
+  <div class="panel-body">
+    <app-title-list></app-title-list>
+  </div>
+
 </div>
 
 <script>

@@ -13,12 +13,13 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class TitleListComponent implements OnInit {
   currentRoute: string = this.router.url;
-  products: FirebaseListObservable<any[]>;
+  movies: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private movieService: MovieService) { }
 
 
   ngOnInit() {
+    this.movies = this.movieService.getMovies();
   }
 
 }
