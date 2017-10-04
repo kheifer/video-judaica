@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { masterFirebaseConfig } from  './api-kays';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule} from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -33,7 +34,11 @@ export const firebaseConfig = {
     EditMovieComponent
   ],
   imports: [
-    BrowserModule, ROUTING, AngularFireModule.initializeApp(firebaseConfig), AngularFireDatabaseModule
+    BrowserModule,
+    ROUTING,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
