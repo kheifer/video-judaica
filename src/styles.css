@@ -32,14 +32,19 @@
 }
 
 /*Styling for forms*/
-label{
+#add-movie-form label {
     display: inline-block;
     float: left;
     clear: left;
     width: 10em;
     text-align: left;
 }
-input {
+#add-movie-form input {
   display: inline-block;
   float: left;
+}
+.guidelines {
+  display: inline-block;
+  float: left;
+  padding-left: 1em;
 }
