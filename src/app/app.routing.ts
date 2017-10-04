@@ -2,9 +2,9 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent} from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
-import {TitleListComponent} from './title-list/title-list.component';
-import {FooterComponent} from './footer/footer.component';
-import {MembershipComponent} from './membership/membership.component';
+import { TitleListComponent } from './title-list/title-list.component';
+import { FooterComponent } from './footer/footer.component';
+import { MembershipComponent } from './membership/membership.component';
 
 const APP_ROUTES: Routes = [
   {
@@ -20,7 +20,7 @@ const APP_ROUTES: Routes = [
     component: TitleListComponent
   },
   {
-    path: 'membership',
+    path: 'register',
     component: MembershipComponent
   }
 ];

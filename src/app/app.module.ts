@@ -17,8 +17,8 @@ import { MembershipComponent } from './membership/membership.component';
     AboutComponent,
     TitleListComponent,
     FooterComponent,
-    MembershipComponent,
-    
+    MembershipComponent
+
   ],
   imports: [
     BrowserModule, ROUTING
