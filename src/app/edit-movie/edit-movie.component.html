@@ -1,3 +1,48 @@
-<p>
-  edit-movie works!
-</p>
+<div *ngIf="selectedMovie" class="panel panel-default">
+  <div class="panel-heading">
+    <h4>Edit</h4>
+  </div>
+  <div class="panel-body">
+    <div>
+      <label>Availability:</label>
+      <input [(ngModel)]="selectedMovie.availability">
+    </div>
+    <div>
+      <label>Title:</label>
+      <input [(ngModel)]="selectedMovie.name">
+    </div>
+    <div>
+      <label>Runtime:</label>
+      <input [(ngModel)]="selectedMovie.runtime">
+    </div>
+    <div>
+      <label>Rating:</label>
+      <input [(ngModel)]="selectedMovie.rating">
+    </div>
+    <div>
+      <label>Language:</label>
+      <input [(ngModel)]="selectedMovie.language">
+    </div>
+    <div>
+      <label>Genre:</label>
+      <input [(ngModel)]="selectedMovie.genre">
+    </div>
+    <div>
+      <label>Format:</label>
+      <input [(ngModel)]="selectedMovie.format">
+    </div>
+    <div>
+      <label>Deposit:</label>
+      <input [(ngModel)]="selectedMovie.deposit">
+    </div>
+    <div>
+      <label>imdb Link:</label>
+      <input [(ngModel)]="selectedMovie.imdb">
+    </div>
+    <div>
+      <label>Restriction:</label>
+      <input [(ngModel)]="selectedMovie.restriction">
+    </div>
+    <button (click)="beginUpdatingMovie(selectedMovie)">Update</button>
+  </div>
+</div>

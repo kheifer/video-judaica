@@ -1,11 +1,11 @@
 <div id="dashboard-navbar">
-  <a href="#">New Membership</a>
-  <a href="#">New Requests</a>
-  <a href="#">Memberships</a>
-  <a href="#">Checked Out</a>
-  <a href="#">Checked In</a>
+  <a href="#" class=''>New Membership</a>
+  <a href="#" class=''>New Requests</a>
+  <a href="#" class=''>Memberships</a>
+  <a href="#" class=''>Checked Out</a>
+  <a href="#" class=''>Checked In</a>
   <a href="#" class="active">Add New Item</a>
-  <a href="#">View/Edit Titles</a>
+  <a href="#" class=''>View/Edit Titles</a>
 </div>
 
 <div id="add-movie-form" class="panel panel-default">
@@ -17,10 +17,10 @@
     <input #newTitle>
     <br>
     <label>Runtime:</label>
-    <input #newRuntime>
+    <input #newRuntime><span class="guidelines">(Format: ## Minutes)</span>
     <br>
     <label>Rating:</label>
-    <input #newRating>
+    <input #newRating>  <span class="guidelines">(If none, enter "Not Rated")</span>
     <br>
     <label>Language(s):</label>
     <input #newLanguage>
@@ -31,28 +31,24 @@
     <label>Format:</label>
     <input #newFormat>
     <br>
-    <label>Availability:</label>
-    <input #newAvailability>
-    <br>
     <label>Deposit:</label>
-    <input #newDeposit>
+    <input #newDeposit> <span class="guidelines">(If none, enter "None")</span>
     <br>
     <label>imdb Link:</label>
-    <input #newImdb>
+    <input #newImdb> <span class="guidelines">(If none, enter "None")</span>
     <br>
     <label>Rental restriction(s):</label>
-    <input #newRestriction>
-    <br><br><br><br>
+    <input #newRestriction> <span class="guidelines">(If none, enter "None")</span>
+    <br><br><br><br><br>
     <button class="btn btn-primary" (click)="newItemForm(newTitle.value,
                                 newRuntime.value,
                                 newRating.value,
                                 newLanguage.value,
                                 newGenre.value,
                                 newFormat.value,
-                                newAvailability.value,
                                 newDeposit.value,
                                 newImdb.value,
-                                newRestriction.value); newTitle.value = '';   newRuntime.value = ''; newRating.value = '';  newLanguage.value = ''; newGenre.value = ''; newFormat.value = ''; newAvailability.value = ''; newDeposit.value = ''; newImdb.value = ''; newRestriction.value = ''">Add</button>
+                                newRestriction.value); newTitle.value = '';   newRuntime.value = ''; newRating.value = '';  newLanguage.value = ''; newGenre.value = ''; newFormat.value = ''; newDeposit.value = ''; newImdb.value = ''; newRestriction.value = ''">Add</button>
   </div>
 </div>
 
@@ -61,7 +57,7 @@
     <h3>View All Titles</h3>
   </div>
   <div class="panel-body">
-    <app-title-list></app-title-list>
+    <app-title-list (editClickSender)="editMovie($event)"></app-title-list>
   </div>
 
 </div>
