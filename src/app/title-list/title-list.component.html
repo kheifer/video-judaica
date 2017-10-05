@@ -2,7 +2,7 @@
 <ul>
   <div *ngFor="let movie of movies | async">
     <li *ngIf="currentRoute === '/title-list'">{{movie.title}}</li>
-    <li *ngIf="currentRoute === '/admin'" (click)="editLinkClicked(movie)">{{movie.title}}
+    <li *ngIf="currentRoute === '/admin'" (click)="editMovie(movie)">{{movie.title}}
     </li>
   </div>
 </ul>

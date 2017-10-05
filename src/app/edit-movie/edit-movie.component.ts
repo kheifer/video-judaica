@@ -18,7 +18,7 @@ export class EditMovieComponent implements OnInit {
   ngOnInit() {
   }
 
-  beginUpdatingMovie(movieToUpdate){
+  finishedMovie(movieToUpdate){
     this.movieService.updateMovie(movieToUpdate);
     this.doneButtonClickSender.emit();
   }

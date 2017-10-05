@@ -1,48 +1,48 @@
-<div *ngIf="selectedMovie" class="panel panel-default">
+<div *ngIf="childSelectedMovie" class="panel panel-default">
   <div class="panel-heading">
     <h4>Edit</h4>
   </div>
   <div class="panel-body">
     <div>
       <label>Availability:</label>
-      <input [(ngModel)]="selectedMovie.availability">
+      <input [(ngModel)]="childSelectedMovie.availability">
     </div>
     <div>
       <label>Title:</label>
-      <input [(ngModel)]="selectedMovie.name">
+      <input [(ngModel)]="childSelectedMovie.title">
     </div>
     <div>
       <label>Runtime:</label>
-      <input [(ngModel)]="selectedMovie.runtime">
+      <input [(ngModel)]="childSelectedMovie.runtime">
     </div>
     <div>
       <label>Rating:</label>
-      <input [(ngModel)]="selectedMovie.rating">
+      <input [(ngModel)]="childSelectedMovie.rating">
     </div>
     <div>
       <label>Language:</label>
-      <input [(ngModel)]="selectedMovie.language">
+      <input [(ngModel)]="childSelectedMovie.language">
     </div>
     <div>
       <label>Genre:</label>
-      <input [(ngModel)]="selectedMovie.genre">
+      <input [(ngModel)]="childSelectedMovie.genre">
     </div>
     <div>
       <label>Format:</label>
-      <input [(ngModel)]="selectedMovie.format">
+      <input [(ngModel)]="childSelectedMovie.format">
     </div>
     <div>
       <label>Deposit:</label>
-      <input [(ngModel)]="selectedMovie.deposit">
+      <input [(ngModel)]="childSelectedMovie.deposit">
     </div>
     <div>
       <label>imdb Link:</label>
-      <input [(ngModel)]="selectedMovie.imdb">
+      <input [(ngModel)]="childSelectedMovie.imdb">
     </div>
     <div>
       <label>Restriction:</label>
-      <input [(ngModel)]="selectedMovie.restriction">
+      <input [(ngModel)]="childSelectedMovie.restriction">
     </div>
-    <button (click)="beginUpdatingMovie(selectedMovie)">Update</button>
+    <button (click)="finishedMovie(childSelectedMovie)">Update</button>
   </div>
 </div>

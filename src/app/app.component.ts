@@ -12,7 +12,6 @@ export class AppComponent {
 
   user;
 
-  selectedMovie = null;
 
   constructor(public authService: AuthenticationService) {
     this.authService.user.subscribe(user =>  {
@@ -28,11 +27,4 @@ export class AppComponent {
     this.authService.logout();
   }
 
-  editMovie(clickedMovie){
-    this.selectedMovie = clickedMovie;
-  }
-
-  finishedEditing(){
-    this.selectedMovie = null;
-  }
 }

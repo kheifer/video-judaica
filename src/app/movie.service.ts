@@ -18,7 +18,7 @@ export class MovieService {
   }
 
   getMovieById(movieId: string){
-    return this.database.object('movies/' + movieId);
+    return this.database.object('video-judaica/' + movieId);
   }
 
   updateMovie(localUpdatedMovie){
@@ -33,5 +33,9 @@ export class MovieService {
     imdb: localUpdatedMovie.imdb,
     restriction: localUpdatedMovie.restriction,
     availability: localUpdatedMovie.availability});
+  }
+
+  readyEdit(movieToEdit: Movie){
+
   }
 }

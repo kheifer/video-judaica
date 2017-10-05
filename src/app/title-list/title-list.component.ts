@@ -14,7 +14,9 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class TitleListComponent implements OnInit {
   currentRoute: string = this.router.url;
   movies: FirebaseListObservable<any[]>;
-  @Output() editClickSender = new EventEmitter();
+  // @Output() editClickSender = new EventEmitter();
+
+  selectedMovie = null;
 
   constructor(private router: Router, private movieService: MovieService) { }
 
@@ -23,8 +25,12 @@ export class TitleListComponent implements OnInit {
     this.movies = this.movieService.getMovies();
   }
 
-  editLinkClicked(movieToEdit: Movie){
-    this.editClickSender.emit(movieToEdit);
+  editMovie(clickedMovie){
+    this.selectedMovie = clickedMovie;
+  }
+
+  finishedEditing(){
+    this.selectedMovie = null;
   }
 
 }
