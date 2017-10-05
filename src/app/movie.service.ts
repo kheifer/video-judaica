@@ -34,7 +34,4 @@ export class MovieService {
     restriction: localUpdatedMovie.restriction,
     availability: localUpdatedMovie.availability});
   }
-
-  readyEdit(movieToEdit: Movie){
-
-  }
+}

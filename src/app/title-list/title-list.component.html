@@ -1,17 +1,19 @@
-<<<<<<< HEAD
+
 
 <app-edit-movie [childSelectedMovie]="selectedMovie" (doneButtonClickSender)="hideEditForm()"></app-edit-movie>
 <ul>
+  <label for="search">Search:</label>
   <input type="text" (keydown)=onKey($event) placeholder="Enter title">
+  <hr>
   <div *ngFor="let movie of movies | letter:{title: searchWords}">
-    <li *ngIf="currentRoute === '/title-list'">{{movie.title}}</li>
+    <li *ngIf="currentRoute === '/title-list'" (click)="goToDetailPage(movie)">{{movie.title}}</li>
     <li *ngIf="currentRoute === '/admin'" (click)="editMovie(movie)">{{movie.title}}
     </li>  </div>
-=======
-<label for="search">Search:</label>
+
+<!-- <label for="search">Search:</label>
   <input type="text" (keydown)=onKey($event) placeholder="Enter title">
-<hr>
-<ul>
+<hr> -->
+<!-- <ul>
 
   <div *ngFor="let movie of movies | letter:{title: searchWords}">
     <li (click)="goToDetailPage(movie)"><em>{{movie.title}}</em></li>
@@ -19,5 +21,5 @@
     {{movie.description}}
 </div>
   </div>
->>>>>>> development
-</ul>
+
+</ul> -->
