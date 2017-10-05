@@ -38,4 +38,3 @@ export class MovieService {
   readyEdit(movieToEdit: Movie){
 
   }
-}

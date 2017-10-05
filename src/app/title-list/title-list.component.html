@@ -9,15 +9,15 @@
     </li>  </div>
 =======
 <label for="search">Search:</label>
-<input type="text" name="" value="">
+  <input type="text" (keydown)=onKey($event) placeholder="Enter title">
 <hr>
 <ul>
-  <input type="text" (keydown)=onKey($event) placeholder="Enter title">
+
   <div *ngFor="let movie of movies | letter:{title: searchWords}">
-    <li (click)="goToDetailPage(movie)"><em>{{movie.title}}</em>
+    <li (click)="goToDetailPage(movie)"><em>{{movie.title}}</em></li>
     <div *ngIf="currentRoute === '/admin'">
     {{movie.description}}
-    </li>
+</div>
   </div>
 >>>>>>> development
 </ul>
