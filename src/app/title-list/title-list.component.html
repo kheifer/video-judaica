@@ -1,5 +1,11 @@
+<label for="search">Search:</label>
+<input type="text" name="" value="">
+<hr>
 <ul>
-  <div *ngFor="let movie of movies">
-    <li>{{movie.title}}</li>
+  <div *ngFor="let movie of movies | async">
+    <li (click)="goToDetailPage(movie)"><em>{{movie.title}}</em>
+    <div *ngIf="currentRoute === '/admin'">
+    {{movie.description}}
+    </li>
   </div>
 </ul>

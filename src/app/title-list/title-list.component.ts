@@ -25,5 +25,7 @@ export class TitleListComponent implements OnInit {
       this.movies = newList;
     });
   }
-
+  goToDetailPage(clickedMovie) {
+    this.router.navigate(['movies', clickedMovie.$key]);
+  };
 }

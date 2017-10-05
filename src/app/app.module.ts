@@ -13,6 +13,7 @@ import { TitleListComponent } from './title-list/title-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { MembershipComponent } from './membership/membership.component';
 import { RentalComponent } from './rental/rental.component';
+import { TitleDetailComponent } from './title-detail/title-detail.component';
 
 
 
@@ -32,7 +33,8 @@ export const firebaseConfig = {
     TitleListComponent,
     FooterComponent,
     MembershipComponent,
-    RentalComponent
+    RentalComponent,
+    TitleDetailComponent
   ],
   imports: [
     BrowserModule,
