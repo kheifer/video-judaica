@@ -31,9 +31,8 @@ export const firebaseConfig = {
     AboutComponent,
     TitleListComponent,
     FooterComponent,
-    // MembershipComponent,
-    RentalComponent,
-
+    MembershipComponent,
+    RentalComponent
   ],
   imports: [
     BrowserModule,
