@@ -17,7 +17,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class TitleListComponent implements OnInit {
   currentRoute: string = this.router.url;
   movies: any[];
-  searchWords ='';
+  searchWords = new FormControl();
 
   constructor(private router: Router, private movieService: MovieService) { }
 
@@ -30,6 +30,5 @@ export class TitleListComponent implements OnInit {
 
   onKey(event: any){
     this.searchWords = event.target.value;
-    console.log(this.searchWords)
   }
 }

@@ -5,12 +5,13 @@ import { Movie } from './movie.model';
   name: 'letter'
 })
 export class LetterPipe implements PipeTransform {
-  transform(movies: any, filter: any): any {
-      if (filter && Array.isArray(movies)) {
-          let filterKeys = Object.keys(filter);
+  transform(movies: any, searchWord: any): any {
+      if (searchWord && Array.isArray(movies)) {
+          let searchKeys = Object.keys(searchWord);
           return movies.filter(movie =>
-              filterKeys.reduce((memo, keyName) =>
-                  (memo && new RegExp(filter[keyName], 'gi').test(movie[keyName])) || filter[keyName] === "", true));
+              searchKeys.reduce((bool, keyName) =>
+                  (bool && new RegExp(searchWord[keyName], 'gi').test(movie[keyName])) || searchWord[keyName] === "", true));
+
       } else {
           return movies;
       }

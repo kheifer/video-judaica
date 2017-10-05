@@ -6,6 +6,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule} from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
+
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
@@ -42,7 +43,8 @@ export const firebaseConfig = {
     ROUTING,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
