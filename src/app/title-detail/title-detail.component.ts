@@ -27,7 +27,6 @@ export class TitleDetailComponent implements OnInit {
                                         dataLastEmittedFromObserver.language,
                                         dataLastEmittedFromObserver.genre,
                                         dataLastEmittedFromObserver.format,
-                                        dataLastEmittedFromObserver.availability,
                                         dataLastEmittedFromObserver.deposit,
                                         dataLastEmittedFromObserver.imdb,
                                         dataLastEmittedFromObserver.restriction)
