@@ -6,19 +6,20 @@ import { Movie } from '../movie.model';
 import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
-  selector: 'app-title-list',
+  selector: 'title-list',
   templateUrl: './title-list.component.html',
   styleUrls: ['./title-list.component.css'],
   providers: [MovieService]
 })
 export class TitleListComponent implements OnInit {
   currentRoute: string = this.router.url;
-  products: FirebaseListObservable<any[]>;
+  movies: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private movieService: MovieService) { }
 
 
   ngOnInit() {
+    this.movies = this.movieService.getMovies();
   }
 
 }

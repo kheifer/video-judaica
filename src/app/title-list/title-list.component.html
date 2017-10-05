@@ -1,3 +1,6 @@
-<p>
-  title-list works!
-</p>
+<ul>
+  <p>inside title-list</p>
+  <div *ngFor="let movie of movies">
+    <li>{{movie.title}}</li>
+  </div>
+</ul>
