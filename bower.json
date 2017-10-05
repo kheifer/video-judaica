@@ -3,10 +3,14 @@
   "description": "New website for special library",
   "main": "",
   "authors": [
-    "Esti Shay, Ryan Nunez, Maria Thomas, Paul Guevarra, Kheifer Fuller"
+    "Esti Shay",
+    "Ryan Nunez",
+    "Maria Thomas",
+    "Paul Guevarra",
+    "Kheifer Fuller"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/EstiShay/video-judaica",
   "ignore": [
     "**/.*",
     "node_modules",

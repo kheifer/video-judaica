@@ -11,6 +11,9 @@ import { AboutComponent } from './about/about.component';
 import { ROUTING } from './app.routing';
 import { TitleListComponent } from './title-list/title-list.component';
 import { FooterComponent } from './footer/footer.component';
+// import { MembershipComponent } from './membership/membership.component';
+import { RentalComponent } from './rental/rental.component';
+
 
 
 export const firebaseConfig = {
@@ -27,7 +30,9 @@ export const firebaseConfig = {
     WelcomeComponent,
     AboutComponent,
     TitleListComponent,
-    FooterComponent
+    FooterComponent,
+    MembershipComponent,
+    RentalComponent
   ],
   imports: [
     BrowserModule,
