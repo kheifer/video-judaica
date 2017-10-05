@@ -2,7 +2,8 @@
 <input type="text" name="" value="">
 <hr>
 <ul>
-  <div *ngFor="let movie of movies | async">
+  <input type="text" (keydown)=onKey($event) placeholder="Enter title">
+  <div *ngFor="let movie of movies | letter:{title: searchWords}">
     <li (click)="goToDetailPage(movie)"><em>{{movie.title}}</em>
     <div *ngIf="currentRoute === '/admin'">
     {{movie.description}}
