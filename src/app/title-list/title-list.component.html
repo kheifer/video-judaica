@@ -1,8 +1,9 @@
+
 <app-edit-movie [childSelectedMovie]="selectedMovie" (doneButtonClickSender)="hideEditForm()"></app-edit-movie>
 <ul>
-  <div *ngFor="let movie of movies | async">
+  <input type="text" (keydown)=onKey($event) placeholder="Enter title">
+  <div *ngFor="let movie of movies | letter:{title: searchWords}">
     <li *ngIf="currentRoute === '/title-list'">{{movie.title}}</li>
     <li *ngIf="currentRoute === '/admin'" (click)="editMovie(movie)">{{movie.title}}
-    </li>
-  </div>
+    </li>  </div>
 </ul>

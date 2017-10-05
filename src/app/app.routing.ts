@@ -5,6 +5,9 @@ import { AboutComponent } from './about/about.component';
 import {TitleListComponent} from './title-list/title-list.component';
 import {FooterComponent} from './footer/footer.component';
 import {AdminComponent} from './admin/admin.component';
+import { MembershipComponent } from './membership/membership.component';
+import { RentalComponent } from './rental/rental.component';
+
 
 const APP_ROUTES: Routes = [
   {
@@ -16,12 +19,21 @@ const APP_ROUTES: Routes = [
     component: AboutComponent
   },
   {
-    path:'title-list',
+    path: 'title-list',
     component: TitleListComponent
   },
   {
+
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'register',
+    component: MembershipComponent
+  },
+  {
+    path:'rental',
+    component: RentalComponent
   }
 ]
 
