@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { TitleListComponent } from './title-list/title-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { MembershipComponent } from './membership/membership.component';
+import { RentalComponent } from './rental/rental.component';
 
 const APP_ROUTES: Routes = [
   {
@@ -22,7 +23,11 @@ const APP_ROUTES: Routes = [
   {
     path: 'register',
     component: MembershipComponent
+  },
+  {
+    path:'rental',
+    component: RentalComponent
   }
-];
+]
 
 export const ROUTING: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES);
