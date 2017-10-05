@@ -1,0 +1,21 @@
+img {
+  display: inline-block;
+  height: 550px;
+  width:auto;
+  position: relative;
+}
+
+
+.back {
+  position: absolute;
+  font-size: 20px;
+  top: 320px;
+  background-color: black;
+  color: white;
+  opacity: 0.75;
+  width:inherit;
+}
+
+p {
+  opacity: none;
+}

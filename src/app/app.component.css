@@ -1,0 +1,16 @@
+.navbar-header img{
+  height: 80px;
+  width: auto;
+}
+
+.navbar-right li{
+  vertical-align: text-bottom;
+  font-size: 20px;
+  margin-top: 15px;
+  color: white;
+}
+
+/*app-footer{
+  position:absolute;
+  bottom: 0;
+}*/
