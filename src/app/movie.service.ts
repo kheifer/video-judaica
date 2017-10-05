@@ -12,4 +12,7 @@ export class MovieService {
   getMovies(){
     return this.movies;
   }
+  getMovieById(movieId: string) {
+    return this.database.object('video-judaica/' + movieId);
+}
 }
