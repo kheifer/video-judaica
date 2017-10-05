@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormControl, FormGroup } from '@angular/forms';
 import { masterFirebaseConfig } from  './api-kays';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule} from 'angularfire2/database';
@@ -13,6 +14,7 @@ import { TitleListComponent } from './title-list/title-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { MembershipComponent } from './membership/membership.component';
 import { RentalComponent } from './rental/rental.component';
+import { LetterPipe } from './letter.pipe';
 
 
 
@@ -32,7 +34,8 @@ export const firebaseConfig = {
     TitleListComponent,
     FooterComponent,
     MembershipComponent,
-    RentalComponent
+    RentalComponent,
+    LetterPipe
   ],
   imports: [
     BrowserModule,

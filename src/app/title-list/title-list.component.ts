@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
+import { FormControl } from '@angular/forms';
 
 import { MovieService } from '../movie.service';
 import { Movie } from '../movie.model';
@@ -16,6 +17,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class TitleListComponent implements OnInit {
   currentRoute: string = this.router.url;
   movies: any[];
+  searchWords ='';
 
   constructor(private router: Router, private movieService: MovieService) { }
 
@@ -26,4 +28,8 @@ export class TitleListComponent implements OnInit {
     });
   }
 
+  onKey(event: any){
+    this.searchWords = event.target.value;
+    console.log(this.searchWords)
+  }
 }

@@ -1,5 +1,6 @@
 <ul>
-  <div *ngFor="let movie of movies">
+  <input type="text" (keydown)=onKey($event) placeholder="Enter title">
+  <div *ngFor="let movie of movies | letter:{title: searchWords}">
     <li>{{movie.title}}</li>
   </div>
 </ul>
