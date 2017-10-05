@@ -15,11 +15,9 @@ import { TitleListComponent } from './title-list/title-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { MembershipComponent } from './membership/membership.component';
 import { RentalComponent } from './rental/rental.component';
-<<<<<<< HEAD
 import { TitleDetailComponent } from './title-detail/title-detail.component';
-=======
 import { LetterPipe } from './letter.pipe';
->>>>>>> 75ecdbaba400857da94bb89cdd8102c2e1a8ac0f
+
 
 
 
@@ -40,11 +38,8 @@ export const firebaseConfig = {
     FooterComponent,
     MembershipComponent,
     RentalComponent,
-<<<<<<< HEAD
-    TitleDetailComponent
-=======
+    TitleDetailComponent,
     LetterPipe
->>>>>>> 75ecdbaba400857da94bb89cdd8102c2e1a8ac0f
   ],
   imports: [
     BrowserModule,
