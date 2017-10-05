@@ -7,7 +7,8 @@ import { AboutComponent } from './about/about.component';
 import { ROUTING } from './app.routing';
 import { TitleListComponent } from './title-list/title-list.component';
 import { FooterComponent } from './footer/footer.component';
-import { MembershipComponent } from './membership/membership.component';
+// import { MembershipComponent } from './membership/membership.component';
+import { RentalComponent } from './rental/rental.component';
 
 
 @NgModule({
@@ -17,8 +18,9 @@ import { MembershipComponent } from './membership/membership.component';
     AboutComponent,
     TitleListComponent,
     FooterComponent,
-    MembershipComponent,
-    
+    // MembershipComponent,
+    RentalComponent,
+
   ],
   imports: [
     BrowserModule, ROUTING
