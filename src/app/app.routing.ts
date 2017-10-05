@@ -2,11 +2,13 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent} from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
-import { TitleListComponent } from './title-list/title-list.component';
-import { FooterComponent } from './footer/footer.component';
+import {TitleListComponent} from './title-list/title-list.component';
+import {FooterComponent} from './footer/footer.component';
+import {AdminComponent} from './admin/admin.component';
 import { MembershipComponent } from './membership/membership.component';
 import { RentalComponent } from './rental/rental.component';
 import { TitleDetailComponent } from './title-detail/title-detail.component';
+
 
 
 const APP_ROUTES: Routes = [
@@ -21,6 +23,11 @@ const APP_ROUTES: Routes = [
   {
     path: 'title-list',
     component: TitleListComponent
+  },
+  {
+
+    path: 'admin',
+    component: AdminComponent
   },
   {
     path: 'register',

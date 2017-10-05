@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+
+<app-edit-movie [childSelectedMovie]="selectedMovie" (doneButtonClickSender)="hideEditForm()"></app-edit-movie>
+<ul>
+  <input type="text" (keydown)=onKey($event) placeholder="Enter title">
+  <div *ngFor="let movie of movies | letter:{title: searchWords}">
+    <li *ngIf="currentRoute === '/title-list'">{{movie.title}}</li>
+    <li *ngIf="currentRoute === '/admin'" (click)="editMovie(movie)">{{movie.title}}
+    </li>  </div>
+=======
 <label for="search">Search:</label>
   <input type="text" (keydown)=onKey($event) placeholder="Enter title">
 <hr>
@@ -9,4 +19,5 @@
     {{movie.description}}
 </div>
   </div>
+>>>>>>> development
 </ul>

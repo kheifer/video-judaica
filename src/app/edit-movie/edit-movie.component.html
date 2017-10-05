@@ -1,0 +1,48 @@
+<div *ngIf="childSelectedMovie" class="panel panel-default" id="edit-form">
+  <div class="panel-heading">
+    <h4>Edit</h4>
+  </div>
+  <div class="panel-body">
+    <div>
+      <label>Availability:</label>
+      <input [(ngModel)]="childSelectedMovie.availability">
+    </div>
+    <div>
+      <label>Title:</label>
+      <input [(ngModel)]="childSelectedMovie.title">
+    </div>
+    <div>
+      <label>Runtime:</label>
+      <input [(ngModel)]="childSelectedMovie.runtime">
+    </div>
+    <div>
+      <label>Rating:</label>
+      <input [(ngModel)]="childSelectedMovie.rating">
+    </div>
+    <div>
+      <label>Language:</label>
+      <input [(ngModel)]="childSelectedMovie.language">
+    </div>
+    <div>
+      <label>Genre:</label>
+      <input [(ngModel)]="childSelectedMovie.genre">
+    </div>
+    <div>
+      <label>Format:</label>
+      <input [(ngModel)]="childSelectedMovie.format">
+    </div>
+    <div>
+      <label>Deposit:</label>
+      <input [(ngModel)]="childSelectedMovie.deposit">
+    </div>
+    <div>
+      <label>imdb Link:</label>
+      <input [(ngModel)]="childSelectedMovie.imdb">
+    </div>
+    <div>
+      <label>Restriction:</label>
+      <input [(ngModel)]="childSelectedMovie.restriction">
+    </div>
+    <button (click)="finishedEditing(childSelectedMovie)">Update</button>
+  </div>
+</div>
