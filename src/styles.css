@@ -48,3 +48,6 @@
   float: left;
   padding-left: 1em;
 }
+#edit-form {
+  float: right;
+}

@@ -1,4 +1,4 @@
-<app-edit-movie [childSelectedMovie]="selectedMovie" (doneButtonClickedSender)="finishedEditing()"></app-edit-movie>
+<app-edit-movie [childSelectedMovie]="selectedMovie" (doneButtonClickSender)="hideEditForm()"></app-edit-movie>
 <ul>
   <div *ngFor="let movie of movies | async">
     <li *ngIf="currentRoute === '/title-list'">{{movie.title}}</li>
