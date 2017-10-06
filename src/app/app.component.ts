@@ -15,7 +15,7 @@ export class AppComponent {
 
   constructor(public authService: AuthenticationService) {
     this.authService.user.subscribe(user =>  {
-      console.log(user);
+      // console.log(user);
     });
   }
 

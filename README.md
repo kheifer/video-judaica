@@ -17,7 +17,8 @@ Website for the nonprofit Sylvia Suckerman Jewish Media Collection, aka Video Ju
 6. As the manager, I want to add new items to my database of items.
 7. As the manager, I want to update my item records.
 8. As the manager, I want to delete item records when items wear out or are returned in an unusable state.
-9. As the web admin, I want access to the manager's dashboard.
+9. As the manager, I want a storefront to sell my movie memorabilia collection.
+10. As the web admin, I want access to the manager's dashboard.
 
 ### Future Features
 1. Build user account system, allowing...
@@ -26,6 +27,7 @@ Website for the nonprofit Sylvia Suckerman Jewish Media Collection, aka Video Ju
 2. Membership applications and rental requests will be managed through the admin dashboard.
 3. Transition to relational database.
 4. Implement online payment using Square.
+5. Build a store to sell manager's movie memorabilia collection.
 
 
 ## Design
@@ -46,6 +48,11 @@ Website for the nonprofit Sylvia Suckerman Jewish Media Collection, aka Video Ju
 ![Admin Edit Item Form screenshot](src/images/vjadmin-updateitem.jpg "Screenshot of the admin's title list with edit form")
 (Buttons change to red when cursor hovers over it.)
 
+
+#### Memorabilia Shop (Under development)
+![Memorabilia Shop screenshot](src/images/vj-memorabiliashop.jpg "Screenshot of the memorabilia shop")
+
+![Memorabilia item detail listing screenshot](src/images/vj-memorabiliadetail.jpg "Screenshot of the detail display for one collectible: a snow globe held by Thing from Addams Family Values")
 
 ## Setup/Installation Requirements
 * Clone the repo

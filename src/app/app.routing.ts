@@ -9,6 +9,7 @@ import { MembershipComponent } from './membership/membership.component';
 import { RentalComponent } from './rental/rental.component';
 import { TitleDetailComponent } from './title-detail/title-detail.component';
 import { MemorabiliaShopComponent } from './memorabilia-shop/memorabilia-shop.component';
+import { MemorabiliaDetailComponent } from './memorabilia-detail/memorabilia-detail.component';
 
 const APP_ROUTES: Routes = [
   {
@@ -42,6 +43,10 @@ const APP_ROUTES: Routes = [
   {
     path:'rental',
     component: RentalComponent
+  },
+  {
+    path:'memorabilia/:id',
+    component: MemorabiliaDetailComponent
   }
 ]
 

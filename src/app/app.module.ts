@@ -23,6 +23,8 @@ import { MembershipComponent } from './membership/membership.component';
 import { RentalComponent } from './rental/rental.component';
 import { TitleDetailComponent } from './title-detail/title-detail.component';
 import { LetterPipe } from './letter.pipe';
+import { MemorabiliaListComponent } from './memorabilia-list/memorabilia-list.component';
+import { MemorabiliaDetailComponent } from './memorabilia-detail/memorabilia-detail.component';
 
 
 export const firebaseConfig = {
@@ -46,7 +48,9 @@ export const firebaseConfig = {
     MembershipComponent,
     RentalComponent,
     TitleDetailComponent,
-    LetterPipe
+    LetterPipe,
+    MemorabiliaListComponent,
+    MemorabiliaDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,11 @@
+<div *ngFor="let collectible of collectibles" class="panel panel-default">
+  <div class="panel-body">
+    <h3 (click)="goToDetailPage(collectible)"><em>{{collectible.name}}</em> from {{collectible.movie}}</h3>
+  </div>
+</div>
+
+<!-- <div *ngIf="currentRoute === '/admin'">
+  {{collectible.price}}, {{collectible.category}}
+  <hr>
+  <app-edit-product [selectedCollectible]="collectible"></app-edit-product>
+</div> -->
