@@ -8,7 +8,7 @@
 # dependencies
 /node_modules
 /bower_components
-/src/app/api-keys.tsssss
+/src/app/api-keys.ts
 
 # IDEs and editors
 /.idea
