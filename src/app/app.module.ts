@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {FormControl, FormGroup } from '@angular/forms';
-import { masterFirebaseConfig } from  './api-kays';
+import { masterFirebaseConfig } from  './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule} from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
