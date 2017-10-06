@@ -1,0 +1,26 @@
+#edit-form {
+  float: right;
+}
+#edit-form label {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 6em;
+    text-align: left;
+}
+#edit-form input {
+  display: inline-block;
+  float: left;
+  width: 15em;
+}
+
+/*Accessibility*/
+.btn-primary {
+  border-color: black;
+  font-weight: bolder;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+  color: #fff;
+  background-color: #961010;
+  border-color: white;
+}

@@ -48,3 +48,14 @@
   float: left;
   padding-left: 1em;
 }
+
+/*Accessibility*/
+.btn-primary {
+  border-color: black;
+  font-weight: bolder;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+  color: #fff;
+  background-color: #961010;
+  border-color: white;
+}

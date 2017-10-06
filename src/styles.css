@@ -1,4 +1,3 @@
-/*Position of edit form*/
-#edit-form {
-  float: right;
+input:focus {
+  background-color: #fff5af;
 }
