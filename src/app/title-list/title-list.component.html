@@ -2,6 +2,7 @@
 <ul>
   <label for="search">Search:</label>
   <input type="text" (keydown)=onKey($event) placeholder="Enter title">
+  <p>Click on a title to see details.</p>
   <hr>
   <div *ngFor="let movie of movies | letter:{title: searchWords}">
     <li *ngIf="currentRoute === '/title-list'" (click)="goToDetailPage(movie)">{{movie.title}}</li>
