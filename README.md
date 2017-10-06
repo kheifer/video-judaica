@@ -5,6 +5,7 @@
 ## Description
 Website for the nonprofit Sylvia Suckerman Jewish Media Collection, aka Video Judaica. Searchable title list with ability to request rentals and apply for membership. Admin dashboard for the manager to add, update, and delete items from the database.
 
+
 ## Specifications
 
 ### User Stories
@@ -26,6 +27,7 @@ Website for the nonprofit Sylvia Suckerman Jewish Media Collection, aka Video Ju
 3. Transition to relational database.
 4. Implement online payment using Square.
 
+
 ## Design
 
 ### Website
@@ -34,6 +36,7 @@ Website for the nonprofit Sylvia Suckerman Jewish Media Collection, aka Video Ju
 ![About Us screenshot](src/images/vj-aboutus.jpg "Screenshot of the About Us page")
 
 ![Title List Search screenshot](src/images/vj-titlesearch.jpg "Screenshot of the title list with a search for 'esther'")
+(Input fields turn yellow when active.)
 
 ![Item Detail Display screenshot](src/images/vj-itemdetail.jpg "Screenshot of the item detail page")
 
@@ -41,6 +44,7 @@ Website for the nonprofit Sylvia Suckerman Jewish Media Collection, aka Video Ju
 ![Admin Add Item Form screenshot](src/images/vjadmin-additem.jpg "Screenshot of the admin's add item form")
 
 ![Admin Edit Item Form screenshot](src/images/vjadmin-updateitem.jpg "Screenshot of the admin's title list with edit form")
+(Buttons change to red when cursor hovers over it.)
 
 
 ## Setup/Installation Requirements
@@ -49,6 +53,8 @@ Website for the nonprofit Sylvia Suckerman Jewish Media Collection, aka Video Ju
 * Run bower install and bower install bootstrap --save
 * Create a Firebase account. In the app folder, create api-keys.ts.
 
+### Known Bugs
+The keyword search occasionally returns titles that have the letters entered but not in the correct order, i.e. a search for "Kahn" with also return items with "Chanukah" in the title.
 
 ### Technologies Used
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli). Data hosted in Firebase. Images and logo provided by client.
