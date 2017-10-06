@@ -3,13 +3,20 @@
 #### By Esti Shay, Ryan Nunez, Maria Thomas, Paul Guevarra, and Kheifer Fuller
 
 ## Description
-Website for the nonprofit Sylvia Suckerman Jewish Video Collection, aka Video Judaica.
+Website for the nonprofit Sylvia Suckerman Jewish Media Collection, aka Video Judaica. Searchable title list with ability to request rentals and apply for membership. Admin dashboard for the manager to add to, update, and delete items from the database.
 
 ## Specifications
 
-#### MVP
-| Behavior      | Example Input      | Example Output       |
-| ------------- | ------------- | ------------- |
+### User Stories
+1. As a user...
+2. As the manager...
+3. As the web admin...
+
+### Future Features
+1. Prospective users will be able to apply for membership through the website.
+2. Members will be able to request rentals through a user account system.
+3. Membership applications and rental requests will be managed through the admin dashboard.
+4. Transition to relational database.
 
 ## Design
 
@@ -22,13 +29,14 @@ Website for the nonprofit Sylvia Suckerman Jewish Video Collection, aka Video Ju
 
 ## Setup/Installation Requirements
 * Clone the repo
-* Run npm install
-* Run bower init and bower install bootstrap --save
+* Run npm install. The Angular dependencies are not the most recent, due to a bug with the latest AngularFire update.
+* Run bower install and bower install bootstrap --save
 * Create a Firebase account. In the app folder, create api-keys.ts.
 
 
 ### Technologies Used
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
+Data hosted in Firebase.
 
 #### Development server
 
