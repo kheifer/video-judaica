@@ -3,28 +3,44 @@
 #### By Esti Shay, Ryan Nunez, Maria Thomas, Paul Guevarra, and Kheifer Fuller
 
 ## Description
-Website for the nonprofit Sylvia Suckerman Jewish Media Collection, aka Video Judaica. Searchable title list with ability to request rentals and apply for membership. Admin dashboard for the manager to add to, update, and delete items from the database.
+Website for the nonprofit Sylvia Suckerman Jewish Media Collection, aka Video Judaica. Searchable title list with ability to request rentals and apply for membership. Admin dashboard for the manager to add, update, and delete items from the database.
 
 ## Specifications
 
 ### User Stories
-1. As a user...
-2. As the manager...
-3. As the web admin...
+1. As a potential member, I want to apply for membership online.
+2. As a member, I want to submit requests for rentals online.
+3. As a member, I want to pay my membership and rental fees through the website.
+4. As the manager, I want to see membership requests and mark them processed.
+5. As the manager, I want to see rental requests, and be able to mark them checked out and returned.
+6. As the manager, I want to add new items to my database of items.
+7. As the manager, I want to update my item records.
+8. As the manager, I want to delete item records when items wear out or are returned in an unusable state.
+9. As the web admin, I want access to the manager's dashboard.
 
 ### Future Features
-1. Prospective users will be able to apply for membership through the website.
-2. Members will be able to request rentals through a user account system.
-3. Membership applications and rental requests will be managed through the admin dashboard.
-4. Transition to relational database.
+1. Build user account system, allowing...
+  * Prospective users to apply for membership through the website.
+  * Members will be able to request rentals through their account.
+2. Membership applications and rental requests will be managed through the admin dashboard.
+3. Transition to relational database.
+4. Implement online payment using Square.
 
 ## Design
 
 ### Website
-[screenshot forthcoming]
+![Homepage screenshot](src/images/vj-homepage.jpg "Screenshot of the homepage")
+
+![About Us screenshot](src/images/vj-aboutus.jpg "Screenshot of the About Us page")
+
+![Title List Search screenshot](src/images/vj-titlesearch.jpg "Screenshot of the title list with a search for 'esther'")
+
+![Item Detail Display screenshot](src/images/vj-itemdetail.jpg "Screenshot of the item detail page")
 
 ### Admin Dashboard
-[screenshot forthcoming]
+![Admin Add Item Form screenshot](src/images/vjadmin-additem.jpg "Screenshot of the admin's add item form")
+
+![Admin Edit Item Form screenshot](src/images/vjadmin-updateitem.jpg "Screenshot of the admin's title list with edit form")
 
 
 ## Setup/Installation Requirements
@@ -35,8 +51,7 @@ Website for the nonprofit Sylvia Suckerman Jewish Media Collection, aka Video Ju
 
 
 ### Technologies Used
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
-Data hosted in Firebase.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli). Data hosted in Firebase. Images and logo provided by client.
 
 #### Development server
 
@@ -49,14 +64,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 #### Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-#### Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-#### Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 #### Further Angular help
 
