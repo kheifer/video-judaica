@@ -2,3 +2,9 @@ img{
   display: block;
   margin: 0 auto;
 }
+
+.suckermans {
+  float: right;
+  text-align: center;
+  margin-left: 1.75em;
+}

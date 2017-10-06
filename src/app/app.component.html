@@ -1,16 +1,17 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" routerLink="">Logo Holder</a>
+      <a routerLink=""><img class="navbar-brand" src="./images/logo.png" alt=""></a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-      <li><a routerLink="title-list">List</a></li>
+      <li><a routerLink="title-list">Catalogue</a></li>
       <li><a routerLink="about">About</a></li>
+      <li><a routerLink="register">Register</a></li>
+      <li><a routerLink="rental">Rental</a></li>
     </ul>
   </div>
 </nav>
 <div class="container">
-  <h1>{{title}}</h1>
   <router-outlet></router-outlet>
-  <app-footer></app-footer>
 </div>
+<app-footer></app-footer>

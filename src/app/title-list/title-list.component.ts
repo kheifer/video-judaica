@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common';
+import { FormControl } from '@angular/forms';
 
 import { MovieService } from '../movie.service';
 import { Movie } from '../movie.model';
@@ -13,12 +16,35 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class TitleListComponent implements OnInit {
   currentRoute: string = this.router.url;
-  products: FirebaseListObservable<any[]>;
+  selectedMovie = null;
+  movies: any[];
+  searchWords = new FormControl();
+
 
   constructor(private router: Router, private movieService: MovieService) { }
 
 
-  ngOnInit() {
+  editMovie(clickedMovie){
+    this.selectedMovie = clickedMovie;
   }
+
+  hideEditForm(){
+    this.selectedMovie = null;
+  }
+
+  ngOnInit(){
+   this.movieService.getMovies().subscribe( newList => {
+      this.movies = newList;
+    });
+
+  }
+  goToDetailPage(clickedMovie) {
+    this.router.navigate(['movie', clickedMovie.$key]);
+};
+
+  onKey(event: any){
+    this.searchWords = event.target.value;
+  }
+
 
 }

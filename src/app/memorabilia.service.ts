@@ -10,9 +10,10 @@ export class MemorabiliaService {
 //   constructor(private database: AngularFireDatabase) { }
 //     this.shopitems = database.list('shopitems');
 // }
-constructor(){ }
+  constructor(){ }
 
-getMemorabilia(){
-  // return this.shopitems;
-  return MEM;
+  getMemorabilia(){
+    // return this.shopitems;
+    return MEM;
+  }
 }

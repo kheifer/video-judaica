@@ -1,3 +1,12 @@
-<p>
-  title-list works!
-</p>
+<app-edit-movie [childSelectedMovie]="selectedMovie" (doneButtonClickSender)="hideEditForm()"></app-edit-movie>
+<ul>
+  <label for="search">Search:</label>
+  <input type="text" (keydown)=onKey($event) placeholder="Enter title">
+  <p>Click on a title to see details.</p>
+  <hr>
+  <div *ngFor="let movie of movies | letter:{title: searchWords}">
+    <li *ngIf="currentRoute === '/title-list'" (click)="goToDetailPage(movie)">{{movie.title}}</li>
+    <li *ngIf="currentRoute === '/admin'" (click)="editMovie(movie)">{{movie.title}}
+    </li>
+  </div>
+</ul>

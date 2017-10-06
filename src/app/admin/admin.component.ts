@@ -10,14 +10,24 @@ import { MovieService } from '../movie.service';
 })
 export class AdminComponent implements OnInit {
 
+  selectedMovie = null;
+
   constructor(private movieService: MovieService) { }
 
   ngOnInit() {
   }
 
-  newItemForm(title: string, runtime: string, rating: string, language: string, genre: string, format: string, availability: string, deposit: string, imdb: string, restriction: string){
-    var newMovie: Movie = new Movie (title, runtime, rating, language, genre, format, availability, deposit, imdb, restriction);
+  newItemForm(title: string, runtime: string, rating: string, language: string, genre: string, format: string, deposit: string, imdb: string, restriction: string){
+    var newMovie: Movie = new Movie (title, runtime, rating, language, genre, format, deposit, imdb, restriction);
     this.movieService.addMovie(newMovie);
+  }
+
+  editMovie(clickedMovie){
+    this.selectedMovie = clickedMovie;
+  }
+
+  finishedEditing(){
+    this.selectedMovie = null;
   }
 
 }
