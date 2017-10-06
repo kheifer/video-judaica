@@ -1,12 +1,13 @@
-<div>
+<div id="detail-display">
+  <h2>Item Details:</h2>
   <h3>{{(movieToDisplay)?.title}}</h3>
   <h4>{{(movieToDisplay)?.runtime}}</h4>
-  <p>{{(movieToDisplay)?.rating}}</p>
-  <p>{{(movieToDisplay)?.language}}</p>
-  <p>{{(movieToDisplay)?.genre}}</p>
-  <p>{{(movieToDisplay)?.format}}</p>
-  <p>{{(movieToDisplay)?.availability}}</p>
-  <p>{{(movieToDisplay)?.deposit}}</p>
-  <p>{{(movieToDisplay)?.imdb}}</p>
-  <p>{{(movieToDisplay)?.restriction}}</p>
+  <p><span class="detail-attribute">Rating:</span> {{(movieToDisplay)?.rating}}</p>
+  <p><span class="detail-attribute">Language(s):</span> {{(movieToDisplay)?.language}}</p>
+  <p><span class="detail-attribute">Genre:</span> {{(movieToDisplay)?.genre}}</p>
+  <p><span class="detail-attribute">Format:</span> {{(movieToDisplay)?.format}}</p>
+  <p><span class="detail-attribute">Availability:</span> {{(movieToDisplay)?.availability}}</p>
+  <p><span class="detail-attribute">Deposit:</span> {{(movieToDisplay)?.deposit}}</p>
+  <p><span class="detail-attribute"><a href="{{(movieToDisplay)?.imdb}}">imdb</a></span></p>
+  <p><span class="detail-attribute">Rental restrictions:</span> {{(movieToDisplay)?.restriction}}</p>
 </div>
